@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Analysis of Austin B-Cycle</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../static/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="../static/css/LineIcons.css">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="../static/css/animate.css">
+
+    <!--====== Aos css ======-->
+    <link rel="stylesheet" href="../static/css/aos.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="../static/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="../static/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+
+
+</head>
+
+<body>
+
+<!--====== PRELOADER PART START ======-->
+
+<div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area pt-100">
+
+        <div class="shape header-shape-one">
+            <img src="../static/images/banner/shape/shape-1.png" alt="shape">
+        </div> <!-- header shape one -->
+
+        <div class="shape header-shape-tow animation-one">
+            <img src="../static/images/banner/shape/shape-2.png" alt="shape">
+        </div> <!-- header shape tow -->
+
+        <div class="shape header-shape-three animation-one">
+            <img src="../static/images/banner/shape/shape-3.png" alt="shape">
+        </div> <!-- header shape three -->
+
+        <div class="shape header-shape-fore">
+            <img src="../static/images/banner/shape/shape-4.png" alt="shape">
+        </div> <!-- header shape three -->
+
+        <div class="navigation-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="../static/images/bcycle.jpg" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#spatial_analysis">Spatial Analysis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#demand_analysis">Demand Analysis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#membership_analysis">Membership Analysis</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Team</a>
+                                    </li>
+                                </ul> <!-- navbar nav -->
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation bar -->
+
+        <div class="header-banner d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-9 col-sm-10">
+                        <div class="banner-content">
+                            <h4 class="sub-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">Rice University BootCamp</h4>
+                            <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2s"><span>Analysis</span> of Austin B-Cycle</h1>
+                            <a class="banner-contact mt-25 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2.3s" href="#contact">Han Yang, Monica Ramos, John Hawkins</a>
+                        </div> <!-- banner content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="banner-image bg_cover" style="background-image: url(../static/images/banner/bike_riding.png); opacity: 0.2"></div>
+        </div> <!-- header banner -->
+
+    </header>
+
+
+    <!--====== HEADER PART ENDS ======-->
+
+        <!--====== ABOUT PART START ======-->
+
+        <section id="about" class="about-area pt-80 pb-130">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-image mt-50 clearfix">
+                                <div class="single-image float-left">
+                                    <img src="../static/images/about/bike1.jpg" alt="About">
+                                </div> <!-- single image -->
+                            </div> <!-- about image -->
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content mt-45">
+                                <h4 class="about-welcome">About Austin B Cycle </h4>
+                                <h3 class="about-title mt-10">What does the data say?</h3>
+                                <p class="mt-25">Austin B Cycle is public bike share system that rolled into Austin in December 2013. The system is owned by the City of Austin and operated by the locl 501(c)(3) non-profit Bike Share of Austin. Austin BCycle immediately broke national records for check outs during SXSW, making it one of the most successful bike sharing programs in the country. There are currently 75 BCycle stations around downtown Austin, in all the places you want to go!
+                                    <br> <br>Exploring the data we find a few interesting trends.  Austin B Cycle has set up kiosks at strategic location throughout the city, primarily focusing on the downtown and Butler Park areas.  Of the membership otions offered the 24-hour, which is later described as the Walk-Up option is by far the most popular, this might suggest that most of the users are visitors to the area.  The peak checkout times of year are March followed by October. During the month of March Austin hosts the SXSW Music festival and October is alos a busy festivl month for the city.  We also took a look at which day of the week was most popular and no big surprises here Friday thru Sunday are the winners for bike checkouts.</p>
+                            </div> <!-- about content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </section>
+        
+            <!--====== ABOUT PART ENDS ======-->
+        
+        
+            <!--====== SPATIAL ANALYSIS PART STARTS ======-->
+        
+        
+        
+            <section id="spatial_analysis" class="about-area pt-80 pb-130">
+                <div class="container">
+                    <div class="row">
+                        <h4>Where are the hotspots?</h4>
+                        <p class="mt-25">Use the layer tool located at the top right of the map to explore kiosk location and usagae.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                                 <div id="map"></div> 
+                        
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </section>
+        
+            <!--====== SPATIAL ANALYSIS PART ENDS ======-->
+        
+            <!--====== DEMAND ANALYSIS PART STARTS ======-->
+        
+        
+            <section id="demand_analysis" class="about-area pt-80 pb-130">
+                <div class="container">
+                        <div class="row">
+                                <h4>When are the hot times?</h4>
+                                <p class="mt-25">Use the Time Series drop down to explore when the peak checkout times are.</p>
+                            </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <option  disabled selected>Select Time Series:</option>
+                            <select id="selDataset" onchange="getData(this.value)"></select>
+                            <div id="bar"></div>
+                        </div>
+
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </section>
+        
+            <!--====== DEMAND ANALYSIS PART ENDS ======-->
+        
+            <!--====== MEMBERSHIP ANALYSIS PART STARTS ======-->
+        
+            <section id="membership_analysis" class="about-area pt-80 pb-130">
+                <div class="container">
+                        <div class="row">
+                                <h4>Who is using B Cycle?</h4>
+                                <p class="mt-25">Use the Year drop down to explore the most popular memberships.</p>
+                            </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <option  disabled selected>Select Year:</option>
+                            <select id="selDataset2" onchange="optionChanged(this.value)"></select>
+                            <div id="pie"></div>
+                        </div>
+                    
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </section>
+        
+            <!--====== DEMAND ANALYSIS PART ENDS ======-->
+        
+        
+            <!--====== PROJECT PART ENDS ======-->
+        
+            <!--====== TEAM PART START ======-->
+        
+            <section id="team" class="team-area pt-125 pb-130 gray-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="section-title text-center pb-20">
+                                <h5 class="sub-title mb-15">Meet The Team</h5>
+                                <h2 class="title">Our Excellent Members</h2>
+                            </div> <!-- section title -->
+                        </div>
+                    </div> <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                                <div class="team-image">
+                                    <img src="../static/images/team/hy.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="team-name"><a href="#">Han Yang</a></h4>
+                                </div>
+                            </div> <!-- single team -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
+                                <div class="team-image">
+                                    <img src="../static/images/team/mr.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="team-name"><a href="#">Monica Ramos</a></h4>
+                                </div>
+                            </div> <!-- single team -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                                <div class="team-image">
+                                    <img src="../static/images/team/jh2.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="team-name"><a href="#">John Hawkins</a></h4>
+                                </div>
+                            </div> <!-- single team -->
+                        </div>
+                        
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </section>
+        
+            <!--====== TEAM PART ENDS ======-->
+        
+    
+        
+            
+        
+        
+            <!--====== BACK TO TOP PART START ======-->
+        
+            <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+        
+            <!--====== BACK TO TOP PART ENDS ======-->
+        
+            <!--====== PART START ======-->
+        
+            <!--
+            <section class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-"></div>
+                    </div>
+                </div>
+            </section>
+        -->
+        
+            <!--====== PART ENDS ======-->
+
+    <!-- row -->
+
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="../static/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!--====== WOW js ======-->
+    <script src="../static/js/wow.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="../static/js/slick.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="../static/js/scrolling-nav.js"></script>
+    <script src="../static/js/jquery.easing.min.js"></script>
+
+    <!--====== Aos js ======-->
+    <script src="../static/js/aos.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="../static/js/main.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/leaflet-heat.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/apppie.js') }}"></script>
+
+</body>
+
+</html>
