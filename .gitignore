@@ -3,7 +3,7 @@ DataSets/
 StarterCode/
 debug.log
 deug
-.ipynb_checkpoints
+.ipynb_checkpoints/
 __pycache__
 api_keys.py
 config.py
