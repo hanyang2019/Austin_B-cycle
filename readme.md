@@ -10,6 +10,7 @@ https://project-bikers.herokuapp.com/
 ## Tools 
 * Python
 * Javascript
+* Sqlite
 ## Objectives
 Explore the data to identify interesting trends. 
 1. Build a heat map of multiple layers to visualize bike stations based on popularity from 2014 to 2016.
