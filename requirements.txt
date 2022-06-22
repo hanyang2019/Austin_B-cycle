@@ -1,4 +1,4 @@
-numpy==1.16.2
+numpy==1.22.0
 Flask==1.0.2
 Flask_SQLAlchemy==2.4.0
 pandas==0.24.2
